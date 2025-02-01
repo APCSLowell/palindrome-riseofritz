@@ -40,7 +40,7 @@ public boolean palindrome(String word)
   String runword = new String();
   for (int i = 0; i < word.length(); i++){
     char w = word.charAt(i);
-    if ( w != ' ' ){
+    if (Character.isLetterOrDigit(w)){
       runword += Character.toLowerCase(w);
     }
   }
